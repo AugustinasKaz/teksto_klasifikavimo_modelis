@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main" class="center">
+        <div id="filters">
+            <div class="the_filter">
+                <label for="date_filter">Date</label>
+                <select name="date_filter" id="date_filter">
+                </select>
+            </div>
+            <div class="the_filter">
+                <label for="ip_filter">Source IP</label>
+                <select name="ip_filter" id="ip_filter">
+                </select>
+            </div>
+            <div class="the_filter">
+                <label for="status_filter">Status</label>
+                <select name="status_filter" id="status_filter">
+                </select>
+            </div>
+            <button id="filter_btn">Filter</button>
+            <button id="filter_btn2">Restore filters</button>
+        </div>
+
+        <div id="for_table">
+            <table id="packets_table" class="my_table">
+            </table>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                        <table id="modal_table" class="my_table">
+                    </table>
+                </div>
+              
+              </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
