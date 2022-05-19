@@ -104,6 +104,7 @@ def main():
     csv_filename = create_packets_csv(packets_array, capture_file)
 
     S3_upload_status = upload_to_s3(csv_filename, packets_bucket) 
+    os.replace(capture_file, "pcap_files/{0}".format(capture_file))
     if S3_upload_status:
         print("{0} uploaded successfully to {1} S3 bucket".format(csv_filename, packets_bucket))
     else:
