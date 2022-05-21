@@ -6,3 +6,5 @@ Saugomi terraform konfiguracija, kuri naudojama sukurti resursus AWS
 Saugomi failai, reikalingi kompiuterio agento paleidimui ir veikimui
 ### Training_data
 csv failai, kuriuos modelis naudos apmokymui ir validacijai
+### Video prezentacija
+https://youtu.be/e0fSpmQc4YY
